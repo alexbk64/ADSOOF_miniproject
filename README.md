@@ -48,20 +48,6 @@ Plus the compiled file
 </p>
 </a>
 <p>
-<h3>Assignment:</h3>
-There is a missing file called <code>WordStoreImp.java</code>. Without this 
-file, you can compile and run the code in <code>WordTest0.java</code>, which 
-uses the code in <code>WordGen.class</code>, but not the other files. You 
-need to supply the missing file, with correct code to make the other programs 
-work. You will not need to make modifications to any of the other files. You may, however,
-produce some further files in order to test your code for all aspects of correctness and
-efficiency.  The Java files given pass an <code>int</code> argument to the <code>WordStoreImp</code>
-constructor, indicating the initial number of <Code>String</code>s the
-<code>WordStore</code> object will hold. You may or may not need to make
-use of this parameter when you write your code to implement 
-<code>WordStore</code>, if you do not need to make use of it just give your
-constructor an <code>int</code> parameter but do not otherwise use it.
-</p></br>
 Description of files: 
 <p>
 The code in <code>WordGen.java</code> generates random words.  It is used to test the code with large amounts of data.
@@ -106,7 +92,20 @@ then generates a second set of words stored in an array and applies the
 operation on the collection with each word from the second set. It measures 
 and displays the time taken to apply the operation repeatedly.  
 </p>
-
+<h3>Assignment:</h3>
+There is a missing file called <code>WordStoreImp.java</code>. Without this 
+file, you can compile and run the code in <code>WordTest0.java</code>, which 
+uses the code in <code>WordGen.class</code>, but not the other files. You 
+need to supply the missing file, with correct code to make the other programs 
+work. You will not need to make modifications to any of the other files. You may, however,
+produce some further files in order to test your code for all aspects of correctness and
+efficiency.  The Java files given pass an <code>int</code> argument to the <code>WordStoreImp</code>
+constructor, indicating the initial number of <Code>String</code>s the
+<code>WordStore</code> object will hold. You may or may not need to make
+use of this parameter when you write your code to implement 
+<code>WordStore</code>, if you do not need to make use of it just give your
+constructor an <code>int</code> parameter but do not otherwise use it.
+</p>
 <h3>Marks</h3>
 <p>
 Marks for this coursework will be divided equally between marks for the code and marks
