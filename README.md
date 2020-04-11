@@ -8,11 +8,9 @@
  style="font-family: Arial;">Mini Project 2017</span></b>
 
 <h2>Implementing a <code>String</code> collection class</h2>
+
 <p>
-Submission deadline: 11 December 2017
-</p>
-<p>
-In this mini-project you have to build a class which implements
+In this mini-project I had to build a class which implements
 an interface called <code>WordStore</code>. This interface defines a collection
 which stores <code>String</code>s. It has methods:
 <ul>
@@ -34,7 +32,7 @@ does not occur in it.
 </p>
 <a name="givenfiles">
 <p> 
-The following Java files are made available to you:
+The following Java files were made available to me:
 <ul>
 <li><code><a href = "http://qmplus.qmul.ac.uk/pluginfile.php/372668/mod_page/intro/WordStore.java">WordStore.java</a></code></li>
 <li><code><a href = "http://qmplus.qmul.ac.uk/pluginfile.php/372668/mod_page/content/5/WordTest0.java">WordTest0.java</a></code></li>
@@ -45,13 +43,12 @@ The following Java files are made available to you:
 </ul>
 Plus the compiled file
 <ul>
-<li><code><a href = "http://qmplus.qmul.ac.uk/pluginfile.php/372668/mod_page/content/5/WordGen.class">WordGen.class</a></code>
-(the source code is in <code><a href = "http://qmplus.qmul.ac.uk/pluginfile.php/372668/mod_page/content/5/WordGen.java">WordGen.java</a></code>)
-</li>
+<li><code><a href = "http://qmplus.qmul.ac.uk/pluginfile.php/372668/mod_page/content/5/WordGen.class">WordGen.class</a></code></li>
 </ul>
 </p>
 </a>
 <p>
+<h3>Assignment:</h3>
 There is a missing file called <code>WordStoreImp.java</code>. Without this 
 file, you can compile and run the code in <code>WordTest0.java</code>, which 
 uses the code in <code>WordGen.class</code>, but not the other files. You 
@@ -64,16 +61,16 @@ constructor, indicating the initial number of <Code>String</code>s the
 use of this parameter when you write your code to implement 
 <code>WordStore</code>, if you do not need to make use of it just give your
 constructor an <code>int</code> parameter but do not otherwise use it.
-</p>
+</p></br>
+Description of files: 
 <p>
-The code in <code>WordGen.java</code> generates random words.  It is given to enable you
-to test your code with large amounts of data.
+The code in <code>WordGen.java</code> generates random words.  It is used to test the code with large amounts of data.
 The zero-argument static method <code>make</code> in <code>WordGen</code> returns a 
 <code>String</code> with a new word. There is no guarantee that a word returned
 by a previous call of <code>make</code> will not be 
 returned again. The static method <code>initialise</code> which takes an 
 integer argument, the &#8220;seed&#8221;, sets up a particular series of words which is 
-always given for any particular seed, so you can test the code several times 
+always given for any particular seed, so the code can be tested several times, 
 knowing each time the same words will be generated. There is no test that the 
 words generated have any meaning in English, most won't, but the rules which 
 generate them ensure they are pronounceable using standard English spelling 
@@ -84,16 +81,16 @@ All words generated consist of lower case alphabetic characters only.
 </p>
 <p>
 The program in <code>WordTest0.java</code> just generates and displays
-some words, so you can see the sort of data you are dealing with.
-The program in <code>WordTest1.java</code> enables you to generate some
-words (which are not displayed, so you can generate more of them than you
-could reasonably display on the screen) and then enter your own words to see 
+some words, so we can see the sort of data we are dealing with.
+The program in <code>WordTest1.java</code> enables us to generate some
+words (which are not displayed, so we can generate more of them than we
+could reasonably display on the screen) and then enter our own words to see 
 how many times each of them was generated. It requires that objects of type 
 <code>WordStore</code> have methods <code>add</code> and <code>count</code>. 
 Both take a <code>String</code> as an argument, the first adding it to the 
 collection held in the <code>WordStore</code> object, the second returning an 
 integer saying how many times the <code>String</code> argument is stored in 
-the collection. So the collection class you write as <code>WordStoreImp</code> 
+the collection. So the collection class we write as <code>WordStoreImp</code> 
 must have the concept of a word being stored in it a particular number of times.
 Objects of type <code>WordStore</code> must also have the method
 <code>remove</code> which takes a <code>String</code> as an argument
@@ -109,44 +106,6 @@ then generates a second set of words stored in an array and applies the
 operation on the collection with each word from the second set. It measures 
 and displays the time taken to apply the operation repeatedly.  
 </p>
-<h3>Submission</h3>
-<p>
-You should submit this coursework electronically through the
-<a href="https://qmplus.qmul.ac.uk/mod/assign/view.php?id=721152">QMPlus Submission link</a> 
-on the ADSOOF website. This is to be taken as <u>individual</u> 
-coursework. All code submitted should be your own work.  You are required
-to submit a single file in .pdf format.  This file should contain all your
-code, a written explanation of the design decisions you made in choosing the
-algorithms and data structures used, an explanation of how they work, and
-a presentation of timing figures obtained from your code.  You should not include the
-Java files given <a href="#givenfiles">above</a> in your submission, but if you develop any additional 
-testing code you should include that. It is your responsibility to make sure your code is 
-properly tested for correctness and to decide on how to collect and present timing data.  
-Making good choices on how to test your code for correctness and efficiency, and 
-explaining them, will contribute to your marks.
-</p>
-<p>
-The data collected should be enough to indicate 
-the efficiency of your implementation when dealing with large amounts of data.  
-So it should show the relationship between the time taken to perform an operation and
-the number of words stored.  The figures should be displayed in the form of graphs or tables. 
-</p>
-<p>
-The description of your code should concentrate on the algorithms and data structure it
-implements.  A good way of doing this is to assume you are writing it for someone who was
-in your position when you started the ADSOOF module.  So you do not need to go into basic
-aspects of how Java works as covered in 1st year teaching.  Your explanation should assume
-that the person reading it knows the basics of Java.  It should be written in a way that
-would help a person like that understand better how your code works to perform its task.
-</p>
-<p>
-As there is no separate submission of the <code>.java</code> files you have written,
-you need to copy them as text and put them in the final document that you save in
-pdf format and submit.  So it is important to make sure your code is laid out in a way
-that makes it easy for a human reader who knows the basics of Java to follow it and
-understand how it works just by looking at it.
-</p>
-
 
 <h3>Marks</h3>
 <p>
@@ -195,11 +154,6 @@ each, it would not gain you extra marks.  A brief mention of others you have con
 would be enough.  I say this because it is important to put an upper limit on what is
 required, and no-one should feel under pressure to go beyond that.
 </p>
-
-<hr>
-<address><a href="mailto:matthew.huntbach@qmul.ac.uk">Matthew Huntbach</a></address>
-</hr>
-<i>Last modified: 3 November 2017</i>
 
 </body>
 </html>
